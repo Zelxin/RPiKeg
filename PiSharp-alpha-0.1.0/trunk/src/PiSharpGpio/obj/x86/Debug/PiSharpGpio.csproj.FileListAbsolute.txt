@@ -1,0 +1,1 @@
+C:\Users\vvremote\Desktop\PiSharp-alpha-0.1.0\trunk\src\PiSharpGpio\bin\Debug\PiSharpGpio.exe.config

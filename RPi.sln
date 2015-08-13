@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPi", "RPi\RPi.csproj", "{DF903E64-F11A-4C6C-A85E-80742D769223}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KegeratorUI", "KegeratorUI\KegeratorUI.csproj", "{7737B257-D637-4BFD-B9BC-A1043B781446}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7737B257-D637-4BFD-B9BC-A1043B781446}.Debug|x86.ActiveCfg = Debug|x86
+		{7737B257-D637-4BFD-B9BC-A1043B781446}.Debug|x86.Build.0 = Debug|x86
+		{7737B257-D637-4BFD-B9BC-A1043B781446}.Release|x86.ActiveCfg = Release|x86
+		{7737B257-D637-4BFD-B9BC-A1043B781446}.Release|x86.Build.0 = Release|x86
+		{DF903E64-F11A-4C6C-A85E-80742D769223}.Debug|x86.ActiveCfg = Debug|x86
+		{DF903E64-F11A-4C6C-A85E-80742D769223}.Debug|x86.Build.0 = Debug|x86
+		{DF903E64-F11A-4C6C-A85E-80742D769223}.Release|x86.ActiveCfg = Release|x86
+		{DF903E64-F11A-4C6C-A85E-80742D769223}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = KegeratorUI\KegeratorUI.csproj
+	EndGlobalSection
+EndGlobal
