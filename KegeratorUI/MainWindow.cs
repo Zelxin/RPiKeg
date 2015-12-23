@@ -4,12 +4,23 @@ using RPi;
 using Raspberry.IO.GeneralPurpose;
 using Raspberry.IO.Components.Sensors.Temperature.Dht;
 using KegeratorUI;
+using System.Drawing;
+using System.Collections.Generic;
+using Gdk;
+using System.Runtime.InteropServices;
 
 public partial class MainWindow: Gtk.Window
 {
 
 	FlowMeter fm;
 	FridgeController fc;
+
+
+	public List<Pixbuf> BeerImages {
+		get;//{ return _beerImages; }
+		private set;// { _beerImages = value; }
+	}
+
 	public MainWindow () : base (Gtk.WindowType.Toplevel)
 	{
 		Build ();
@@ -18,6 +29,27 @@ public partial class MainWindow: Gtk.Window
 		fm.FlowChanged += FlowChanged;
 		fc = new FridgeController (4, ConnectorPin.P1Pin05.Output (), (float)spn_OffTemp.Value,  (float)spn_OnTemp.Value);
 
+
+		//Setup building the beer image list.
+		try
+		{
+
+			var img = new Pixbuf ("8BitBeer.bmp");
+			BeerImages = new List<Pixbuf> ();
+			int beerwidth = 224;
+			int beerheight = 224;
+
+			//Builds list of beer images.
+			for (int i = 0; i < 11; i++) 
+			{
+				BeerImages.Add(new Pixbuf (img, beerwidth * i,0, beerwidth, beerheight));
+			}
+			img_Beer.Pixbuf =BeerImages[0];
+		}
+		catch(Exception ex) 
+		{
+			
+		}
 	}
 
 	/// <summary>
@@ -48,7 +80,7 @@ public partial class MainWindow: Gtk.Window
 	{
 		var ps = new PinSettings ();
 		ConnectorPin FlowPin = IntToPin (ps.FlowPin);
-		ConnectedPin TemperaturePin = IntToPin (ps.TemperaturePin);
+		ConnectorPin TemperaturePin = IntToPin (ps.TemperaturePin);
 		ps.Show ();
 	}
 
@@ -87,5 +119,4 @@ public partial class MainWindow: Gtk.Window
 		}
 		return result;
 	}
-
 }

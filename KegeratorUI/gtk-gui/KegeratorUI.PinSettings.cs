@@ -12,15 +12,11 @@ namespace KegeratorUI
 		
 		private global::Gtk.Entry ent_Temperature;
 		
-		private global::Gtk.ComboBox cmb_Pins;
-		
 		private global::Gtk.VBox vbox3;
 		
 		private global::Gtk.Label label4;
 		
 		private global::Gtk.Label label2;
-		
-		private global::Gtk.Label label6;
 		
 		private global::Gtk.Image img_PinLayout;
 		
@@ -70,18 +66,10 @@ namespace KegeratorUI
 			w3.Position = 1;
 			w3.Expand = false;
 			w3.Fill = false;
-			// Container child vbox4.Gtk.Box+BoxChild
-			this.cmb_Pins = global::Gtk.ComboBox.NewText ();
-			this.cmb_Pins.Name = "cmb_Pins";
-			this.vbox4.Add (this.cmb_Pins);
-			global::Gtk.Box.BoxChild w4 = ((global::Gtk.Box.BoxChild)(this.vbox4 [this.cmb_Pins]));
-			w4.Position = 2;
-			w4.Expand = false;
-			w4.Fill = false;
 			this.fixed1.Add (this.vbox4);
-			global::Gtk.Fixed.FixedChild w5 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.vbox4]));
-			w5.X = 142;
-			w5.Y = 6;
+			global::Gtk.Fixed.FixedChild w4 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.vbox4]));
+			w4.X = 142;
+			w4.Y = 6;
 			// Container child fixed1.Gtk.Fixed+FixedChild
 			this.vbox3 = new global::Gtk.VBox ();
 			this.vbox3.Name = "vbox3";
@@ -91,52 +79,41 @@ namespace KegeratorUI
 			this.label4.Name = "label4";
 			this.label4.LabelProp = global::Mono.Unix.Catalog.GetString ("Flow Sensor Pin");
 			this.vbox3.Add (this.label4);
-			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.label4]));
-			w6.Position = 0;
-			w6.Expand = false;
-			w6.Fill = false;
+			global::Gtk.Box.BoxChild w5 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.label4]));
+			w5.Position = 0;
+			w5.Expand = false;
+			w5.Fill = false;
 			// Container child vbox3.Gtk.Box+BoxChild
 			this.label2 = new global::Gtk.Label ();
 			this.label2.Name = "label2";
 			this.label2.LabelProp = global::Mono.Unix.Catalog.GetString ("Temperature Sensor Pin");
 			this.vbox3.Add (this.label2);
-			global::Gtk.Box.BoxChild w7 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.label2]));
-			w7.Position = 1;
-			w7.Expand = false;
-			w7.Fill = false;
-			// Container child vbox3.Gtk.Box+BoxChild
-			this.label6 = new global::Gtk.Label ();
-			this.label6.Name = "label6";
-			this.label6.LabelProp = global::Mono.Unix.Catalog.GetString ("label6");
-			this.vbox3.Add (this.label6);
-			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.label6]));
-			w8.Position = 2;
-			w8.Expand = false;
-			w8.Fill = false;
+			global::Gtk.Box.BoxChild w6 = ((global::Gtk.Box.BoxChild)(this.vbox3 [this.label2]));
+			w6.Position = 1;
+			w6.Expand = false;
+			w6.Fill = false;
 			this.fixed1.Add (this.vbox3);
-			global::Gtk.Fixed.FixedChild w9 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.vbox3]));
-			w9.X = 5;
-			w9.Y = 14;
+			global::Gtk.Fixed.FixedChild w7 = ((global::Gtk.Fixed.FixedChild)(this.fixed1 [this.vbox3]));
+			w7.X = 5;
+			w7.Y = 14;
 			w1.Add (this.fixed1);
-			global::Gtk.Box.BoxChild w10 = ((global::Gtk.Box.BoxChild)(w1 [this.fixed1]));
-			w10.Position = 0;
-			w10.Expand = false;
-			w10.Fill = false;
+			global::Gtk.Box.BoxChild w8 = ((global::Gtk.Box.BoxChild)(w1 [this.fixed1]));
+			w8.Position = 0;
 			// Container child dialog1_VBox.Gtk.Box+BoxChild
 			this.img_PinLayout = new global::Gtk.Image ();
 			this.img_PinLayout.Name = "img_PinLayout";
 			this.img_PinLayout.Pixbuf = global::Gdk.Pixbuf.LoadFromResource ("KegeratorUI.RPiPins.png");
 			w1.Add (this.img_PinLayout);
-			global::Gtk.Box.BoxChild w11 = ((global::Gtk.Box.BoxChild)(w1 [this.img_PinLayout]));
-			w11.Position = 1;
-			w11.Expand = false;
-			w11.Fill = false;
+			global::Gtk.Box.BoxChild w9 = ((global::Gtk.Box.BoxChild)(w1 [this.img_PinLayout]));
+			w9.Position = 1;
+			w9.Expand = false;
+			w9.Fill = false;
 			// Internal child KegeratorUI.PinSettings.ActionArea
-			global::Gtk.HButtonBox w12 = this.ActionArea;
-			w12.Name = "dialog1_ActionArea";
-			w12.Spacing = 10;
-			w12.BorderWidth = ((uint)(5));
-			w12.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
+			global::Gtk.HButtonBox w10 = this.ActionArea;
+			w10.Name = "dialog1_ActionArea";
+			w10.Spacing = 10;
+			w10.BorderWidth = ((uint)(5));
+			w10.LayoutStyle = ((global::Gtk.ButtonBoxStyle)(4));
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonCancel = new global::Gtk.Button ();
 			this.buttonCancel.CanDefault = true;
@@ -146,9 +123,9 @@ namespace KegeratorUI
 			this.buttonCancel.UseUnderline = true;
 			this.buttonCancel.Label = "gtk-cancel";
 			this.AddActionWidget (this.buttonCancel, -6);
-			global::Gtk.ButtonBox.ButtonBoxChild w13 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w12 [this.buttonCancel]));
-			w13.Expand = false;
-			w13.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w11 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w10 [this.buttonCancel]));
+			w11.Expand = false;
+			w11.Fill = false;
 			// Container child dialog1_ActionArea.Gtk.ButtonBox+ButtonBoxChild
 			this.buttonOk = new global::Gtk.Button ();
 			this.buttonOk.CanDefault = true;
@@ -158,16 +135,17 @@ namespace KegeratorUI
 			this.buttonOk.UseUnderline = true;
 			this.buttonOk.Label = "gtk-ok";
 			this.AddActionWidget (this.buttonOk, -5);
-			global::Gtk.ButtonBox.ButtonBoxChild w14 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w12 [this.buttonOk]));
-			w14.Position = 1;
-			w14.Expand = false;
-			w14.Fill = false;
+			global::Gtk.ButtonBox.ButtonBoxChild w12 = ((global::Gtk.ButtonBox.ButtonBoxChild)(w10 [this.buttonOk]));
+			w12.Position = 1;
+			w12.Expand = false;
+			w12.Fill = false;
 			if ((this.Child != null)) {
 				this.Child.ShowAll ();
 			}
 			this.DefaultWidth = 551;
 			this.DefaultHeight = 835;
 			this.Show ();
+			this.Close += new global::System.EventHandler (this.OnClose);
 			this.ent_Temperature.EditingDone += new global::System.EventHandler (this.OnEntTemperatureEditingDone);
 		}
 	}

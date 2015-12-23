@@ -33,22 +33,21 @@
     <Compile Include="RPi.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Raspberry.IO.GeneralPurpose">
-      <HintPath>C:\Users\vvremote\Desktop\raspberry-sharp-io-master\Raspberry.IO.GeneralPurpose\bin\Debug\Raspberry.IO.GeneralPurpose.dll</HintPath>
-    </Reference>
-    <Reference Include="Raspberry.IO.Interop">
-      <HintPath>C:\Users\vvremote\Desktop\raspberry-sharp-io-master\Raspberry.IO.GeneralPurpose\bin\Debug\Raspberry.IO.Interop.dll</HintPath>
-    </Reference>
-    <Reference Include="Raspberry.System">
-      <HintPath>C:\Users\vvremote\Desktop\raspberry-sharp-io-master\Raspberry.IO.GeneralPurpose\bin\Debug\Raspberry.System.dll</HintPath>
-    </Reference>
-    <Reference Include="Raspberry.IO">
-      <HintPath>C:\Users\vvremote\Desktop\raspberry-sharp-io-master\Raspberry.IO.GeneralPurpose\bin\Debug\Raspberry.IO.dll</HintPath>
-    </Reference>
     <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="System" />
-    <Reference Include="Raspberry.IO.Components">
-      <HintPath>C:\Users\vvremote\Desktop\raspberry-sharp-io-master\Raspberry.IO.Components\bin\Debug\Raspberry.IO.Components.dll</HintPath>
-    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\raspberry-sharp-io-master\Raspberry.IO.GeneralPurpose\Raspberry.IO.GeneralPurpose.csproj">
+      <Project>{281C71ED-C36D-408E-8BAA-75C381DC17E7}</Project>
+      <Name>Raspberry.IO.GeneralPurpose</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\raspberry-sharp-io-master\Raspberry.IO.Components\Raspberry.IO.Components.csproj">
+      <Project>{8388CFCA-E3DB-43F7-B049-2CB195211CE8}</Project>
+      <Name>Raspberry.IO.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\raspberry-sharp-io-master\Raspberry.IO\Raspberry.IO.csproj">
+      <Project>{ACE64F17-87E5-43E7-97A0-BDDE19059C61}</Project>
+      <Name>Raspberry.IO</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>

@@ -43,7 +43,9 @@ public partial class MainWindow
 	
 	private global::Gtk.MenuBar menubar1;
 	
-	private global::Gtk.Label GtkLabel1;
+	private global::Gtk.Image img_Beer;
+	
+	private global::Gtk.Label GtkLabel2;
 
 	protected virtual void Build ()
 	{
@@ -198,12 +200,19 @@ public partial class MainWindow
 		global::Gtk.Fixed.FixedChild w13 = ((global::Gtk.Fixed.FixedChild)(this.fixed2 [this.menubar1]));
 		w13.X = 6;
 		w13.Y = 9;
+		// Container child fixed2.Gtk.Fixed+FixedChild
+		this.img_Beer = new global::Gtk.Image ();
+		this.img_Beer.Name = "img_Beer";
+		this.fixed2.Add (this.img_Beer);
+		global::Gtk.Fixed.FixedChild w14 = ((global::Gtk.Fixed.FixedChild)(this.fixed2 [this.img_Beer]));
+		w14.X = 398;
+		w14.Y = 37;
 		this.GtkAlignment.Add (this.fixed2);
 		this.frame1.Add (this.GtkAlignment);
-		this.GtkLabel1 = new global::Gtk.Label ();
-		this.GtkLabel1.Name = "GtkLabel1";
-		this.GtkLabel1.UseMarkup = true;
-		this.frame1.LabelWidget = this.GtkLabel1;
+		this.GtkLabel2 = new global::Gtk.Label ();
+		this.GtkLabel2.Name = "GtkLabel2";
+		this.GtkLabel2.UseMarkup = true;
+		this.frame1.LabelWidget = this.GtkLabel2;
 		this.Add (this.frame1);
 		if ((this.Child != null)) {
 			this.Child.ShowAll ();

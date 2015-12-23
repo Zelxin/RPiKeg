@@ -222,12 +222,21 @@
                     <property name="Y">9</property>
                   </packing>
                 </child>
+                <child>
+                  <widget class="Gtk.Image" id="img_Beer">
+                    <property name="MemberName" />
+                  </widget>
+                  <packing>
+                    <property name="X">398</property>
+                    <property name="Y">37</property>
+                  </packing>
+                </child>
               </widget>
             </child>
           </widget>
         </child>
         <child>
-          <widget class="Gtk.Label" id="GtkLabel1">
+          <widget class="Gtk.Label" id="GtkLabel2">
             <property name="MemberName" />
             <property name="UseMarkup">True</property>
           </widget>

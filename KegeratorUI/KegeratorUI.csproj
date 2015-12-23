@@ -49,22 +49,12 @@
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="Mono.Posix, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756" />
-    <Reference Include="Raspberry.System">
-      <HintPath>C:\Users\vvremote\Desktop\raspberry-sharp-io-master\Raspberry.IO.GeneralPurpose\bin\Debug\Raspberry.System.dll</HintPath>
-    </Reference>
-    <Reference Include="Raspberry.IO.Interop">
-      <HintPath>C:\Users\vvremote\Desktop\raspberry-sharp-io-master\Raspberry.IO.GeneralPurpose\bin\Debug\Raspberry.IO.Interop.dll</HintPath>
-    </Reference>
-    <Reference Include="Raspberry.IO.GeneralPurpose">
-      <HintPath>C:\Users\vvremote\Desktop\raspberry-sharp-io-master\Raspberry.IO.GeneralPurpose\bin\Debug\Raspberry.IO.GeneralPurpose.dll</HintPath>
-    </Reference>
-    <Reference Include="Raspberry.IO">
-      <HintPath>C:\Users\vvremote\Desktop\raspberry-sharp-io-master\Raspberry.IO.GeneralPurpose\bin\Debug\Raspberry.IO.dll</HintPath>
-    </Reference>
-    <Reference Include="Raspberry.IO.Components">
-      <HintPath>C:\Users\vvremote\Desktop\raspberry-sharp-io-master\Raspberry.IO.Components\bin\Debug\Raspberry.IO.Components.dll</HintPath>
-    </Reference>
     <Reference Include="System.Configuration" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>C:\Program Files %28x86%29\Mono\lib\mono\4.5\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="gtk-gui\gui.stetic">
@@ -82,6 +72,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PinSettings.cs" />
     <Compile Include="gtk-gui\KegeratorUI.PinSettings.cs" />
+    <Compile Include="SQLite.cs" />
+    <Compile Include="SQLiteAsync.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -89,8 +81,19 @@
       <Project>{DF903E64-F11A-4C6C-A85E-80742D769223}</Project>
       <Name>RPi</Name>
     </ProjectReference>
+    <ProjectReference Include="..\raspberry-sharp-io-master\Raspberry.IO.Components\Raspberry.IO.Components.csproj">
+      <Project>{8388CFCA-E3DB-43F7-B049-2CB195211CE8}</Project>
+      <Name>Raspberry.IO.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\raspberry-sharp-io-master\Raspberry.IO.GeneralPurpose\Raspberry.IO.GeneralPurpose.csproj">
+      <Project>{281C71ED-C36D-408E-8BAA-75C381DC17E7}</Project>
+      <Name>Raspberry.IO.GeneralPurpose</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="8BitBeer.bmp" />
+    <None Include="8BitBeer.png" />
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

@@ -5,22 +5,55 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPi", "RPi\RPi.csproj", "{D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KegeratorUI", "KegeratorUI\KegeratorUI.csproj", "{7737B257-D637-4BFD-B9BC-A1043B781446}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raspberry.IO", "raspberry-sharp-io-master\Raspberry.IO\Raspberry.IO.csproj", "{ACE64F17-87E5-43E7-97A0-BDDE19059C61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raspberry.IO.GeneralPurpose", "raspberry-sharp-io-master\Raspberry.IO.GeneralPurpose\Raspberry.IO.GeneralPurpose.csproj", "{281C71ED-C36D-408E-8BAA-75C381DC17E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raspberry.IO.Components", "raspberry-sharp-io-master\Raspberry.IO.Components\Raspberry.IO.Components.csproj", "{8388CFCA-E3DB-43F7-B049-2CB195211CE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raspberry.IO.Interop", "raspberry-sharp-io-master\Raspberry.IO.Interop\Raspberry.IO.Interop.csproj", "{689CB6C4-3D23-45DA-8E00-87C28AEA32D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raspberry.IO.SerialPeripheralInterface", "raspberry-sharp-io-master\Raspberry.IO.SerialPeripheralInterface\Raspberry.IO.SerialPeripheralInterface.csproj", "{326342E5-0411-40E8-9F2D-563D6B192568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raspberry.IO.InterIntegratedCircuit", "raspberry-sharp-io-master\Raspberry.IO.InterIntegratedCircuit\Raspberry.IO.InterIntegratedCircuit.csproj", "{63B8403E-BC56-43F9-A045-F61ECC3871F3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{281C71ED-C36D-408E-8BAA-75C381DC17E7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{281C71ED-C36D-408E-8BAA-75C381DC17E7}.Debug|x86.Build.0 = Debug|Any CPU
+		{281C71ED-C36D-408E-8BAA-75C381DC17E7}.Release|x86.ActiveCfg = Release|Any CPU
+		{281C71ED-C36D-408E-8BAA-75C381DC17E7}.Release|x86.Build.0 = Release|Any CPU
+		{326342E5-0411-40E8-9F2D-563D6B192568}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{326342E5-0411-40E8-9F2D-563D6B192568}.Debug|x86.Build.0 = Debug|Any CPU
+		{326342E5-0411-40E8-9F2D-563D6B192568}.Release|x86.ActiveCfg = Release|Any CPU
+		{326342E5-0411-40E8-9F2D-563D6B192568}.Release|x86.Build.0 = Release|Any CPU
+		{63B8403E-BC56-43F9-A045-F61ECC3871F3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{63B8403E-BC56-43F9-A045-F61ECC3871F3}.Debug|x86.Build.0 = Debug|Any CPU
+		{63B8403E-BC56-43F9-A045-F61ECC3871F3}.Release|x86.ActiveCfg = Release|Any CPU
+		{63B8403E-BC56-43F9-A045-F61ECC3871F3}.Release|x86.Build.0 = Release|Any CPU
+		{689CB6C4-3D23-45DA-8E00-87C28AEA32D0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{689CB6C4-3D23-45DA-8E00-87C28AEA32D0}.Debug|x86.Build.0 = Debug|Any CPU
+		{689CB6C4-3D23-45DA-8E00-87C28AEA32D0}.Release|x86.ActiveCfg = Release|Any CPU
+		{689CB6C4-3D23-45DA-8E00-87C28AEA32D0}.Release|x86.Build.0 = Release|Any CPU
 		{7737B257-D637-4BFD-B9BC-A1043B781446}.Debug|x86.ActiveCfg = Debug|x86
 		{7737B257-D637-4BFD-B9BC-A1043B781446}.Debug|x86.Build.0 = Debug|x86
 		{7737B257-D637-4BFD-B9BC-A1043B781446}.Release|x86.ActiveCfg = Release|x86
 		{7737B257-D637-4BFD-B9BC-A1043B781446}.Release|x86.Build.0 = Release|x86
+		{8388CFCA-E3DB-43F7-B049-2CB195211CE8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{8388CFCA-E3DB-43F7-B049-2CB195211CE8}.Debug|x86.Build.0 = Debug|Any CPU
+		{8388CFCA-E3DB-43F7-B049-2CB195211CE8}.Release|x86.ActiveCfg = Release|Any CPU
+		{8388CFCA-E3DB-43F7-B049-2CB195211CE8}.Release|x86.Build.0 = Release|Any CPU
+		{ACE64F17-87E5-43E7-97A0-BDDE19059C61}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ACE64F17-87E5-43E7-97A0-BDDE19059C61}.Debug|x86.Build.0 = Debug|Any CPU
+		{ACE64F17-87E5-43E7-97A0-BDDE19059C61}.Release|x86.ActiveCfg = Release|Any CPU
+		{ACE64F17-87E5-43E7-97A0-BDDE19059C61}.Release|x86.Build.0 = Release|Any CPU
 		{DF903E64-F11A-4C6C-A85E-80742D769223}.Debug|x86.ActiveCfg = Debug|x86
 		{DF903E64-F11A-4C6C-A85E-80742D769223}.Debug|x86.Build.0 = Debug|x86
 		{DF903E64-F11A-4C6C-A85E-80742D769223}.Release|x86.ActiveCfg = Release|x86
 		{DF903E64-F11A-4C6C-A85E-80742D769223}.Release|x86.Build.0 = Release|x86
-	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = KegeratorUI\KegeratorUI.csproj
 	EndGlobalSection
 EndGlobal
